@@ -1,0 +1,99 @@
+/* Home Page */
+
+body { 
+    height: 3000px;
+    position: relative;
+    inset: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Home Page : Header */ 
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    height: 40px;
+    width: 150px;
+    border: 2px solid green;
+    right: 10px;
+}
+span#interact-links p {
+    color: red;
+    display: block;
+}
+header {
+    position: relative;
+    border-bottom: 2px rgb(207, 207, 207) inset;
+    inset: 0;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}   
+#header-wrap {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    z-index: 5;
+}
+
+/* Home Page : Sections */
+
+.section {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#buy-now {
+    background-color: rgb(0, 136, 255);
+    color: white;
+}
+#section-1 {
+    background-image: url('images/iconicbackground.jpg');
+    height: 500px;
+    z-index: -1;
+    font-weight: bold;
+}
+#section-1 article {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    padding: 20px;
+    background-color: white;
+}
+article p {
+    border: 2px solid purple;
+    left: 0;
+    padding: 5px;
+    float: left;
+    margin: 5px;
+}
+#section-1 fieldset {
+    background-color: white;
+    position: absolute;
+    left: 10%;
+}
+#section-1 #home-title {
+    top: 30%;
+}
+#section-2 {
+    border: 3px solid grey;
+    height: 1000px;
+}
+#section-3 {
+    background-image: url('images/laptoplady.jpg');
+    background-position: center;
+    height: 400px;
+}
+#section-4 {
+    border: 3px solid cyan;
+    height: 800px;
+}
+#section-5 {
+    background-color: rgb(56, 56, 56);
+    color: white;
+    height: 300px;
+}
