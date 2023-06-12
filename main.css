@@ -6,6 +6,16 @@ body {
     inset: 0;
     margin: 0;
     overflow-x: hidden;
+    font-family: system-ui, 'Segoe UI', 'Helvetica Neue', sans-serif;
+}
+body .logo {
+    font-family: fantasy;
+}
+.section span {
+    font-family: 'Trebuchet MS';
+}
+* {
+    box-sizing: content-box;
 }
 
 /* Home Page : Header */ 
@@ -16,18 +26,18 @@ body {
     position: absolute;
     height: 40px;
     width: 150px;
-    border: 2px solid green;
-    right: 10px;
+    border: 2px dashed skyblue;
+    right: 30px;
 }
 span#interact-links p {
-    color: red;
+    color: rgb(183, 183, 183);
     display: block;
 }
 header {
     position: relative;
     border-bottom: 2px rgb(207, 207, 207) inset;
     inset: 0;
-    padding: 15px;
+    padding: 0px 50px;
     display: flex;
     align-items: center;
     background-color: white;
@@ -46,6 +56,7 @@ header {
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 #buy-now {
     background-color: rgb(0, 136, 255);
@@ -56,37 +67,121 @@ header {
     height: 500px;
     z-index: -1;
     font-weight: bold;
+    box-shadow: 0px 200px 100px 80px white inset;
 }
 #section-1 article {
     position: absolute;
     left: 10%;
     bottom: 10%;
-    padding: 20px;
     background-color: white;
+    width: 500px;
+    height: 40px;
+    overflow: hidden;
+    border: 4px solid rgba(23, 79, 249, 0.834);
+}
+#section-1 #booking-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 article p {
-    border: 2px solid purple;
-    left: 0;
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 5px;
-    float: left;
-    margin: 5px;
 }
-#section-1 fieldset {
-    background-color: white;
+#section-1 span {
+    background-color: '';
+    line-height: 1.75;
     position: absolute;
+    padding: 15px;
+}
+#section-1 #home-desc {
+    width: 75%;
+    height: 20%;
     left: 10%;
+    color: rgb(102, 102, 102);
+    line-height: 0.9;
 }
 #section-1 #home-title {
-    top: 30%;
+    left: 5%;
+    font-size: 150%;
+    top: 25%;
 }
 #section-2 {
-    border: 3px solid grey;
     height: 1000px;
 }
+#section-2 fieldset {
+    position: absolute;
+    top: 5%;
+}
+#section-2 #got-question {
+    position: absolute;
+    top: 0;
+    line-height: 1.5;
+    font-size: 70%;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+}
+#got-question:hover {
+    background-color: rgb(65, 65, 65);
+    color: white;
+}
+#section-2 #benefits-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 10%;
+    height: 70%;
+    width: 70%;
+}
+#section-2 #benefits-wrap .benefit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 45%;
+    height: 50%;
+}
+#benefit-1 {
+    border-bottom: 2px solid lightgrey;
+    border-right: 2px solid lightgrey;
+}
+#benefit-2 {
+    border-bottom: 2px solid lightgrey;
+}
+#benefit-3 {
+    border-right: 2px solid lightgrey;
+}
+
 #section-3 {
     background-image: url('images/laptoplady.jpg');
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    box-sizing: content-box;
+    width: 120%;
+    right: 10%;
     height: 400px;
+}
+#sec-3-overlay {
+    z-index: 2;
+    position: absolute;
+    inset: 0;
+    box-sizing: content-box;
+    border-top: 50px solid white;
+    border-bottom: 50px solid white;
+    background-color:rgb(56, 56, 56, 0.75);
 }
 #section-4 {
     border: 3px solid cyan;
@@ -95,5 +190,34 @@ article p {
 #section-5 {
     background-color: rgb(56, 56, 56);
     color: white;
-    height: 300px;
+    height: 500px;
+}
+#section-5 #contacts-wrap {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 0;
+}
+#section-5 #links-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 15%;
+    width: 75%;
+    padding: 25px;
+
+}
+#section-5 fieldset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 50%;
+}
+#section-5 h1#big-logo {
+    border-bottom: 1px solid white;
+    width: 90%;
+    padding: 25px;
 }
