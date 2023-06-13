@@ -66,7 +66,7 @@ header {
     height: 500px;
     z-index: -1;
     font-weight: bold;
-    box-shadow: 0px 200px 100px 80px white inset;
+    box-shadow: 0px 150px 200px 150px white inset;
 }
 #section-1 article {
     position: absolute;
@@ -105,7 +105,7 @@ article p {
     width: 75%;
     height: 20%;
     left: 10%;
-    color: rgb(102, 102, 102);
+    color: rgb(94, 94, 94);
     line-height: 0.9;
 }
 #section-1 #home-title {
@@ -116,9 +116,26 @@ article p {
 #section-2 {
     height: 1000px;
 }
-#section-2 fieldset {
+#section-2 .faq-link {
+    width: 100%;
+    height: 75px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+    font-weight: bold;
+}
+#section-2 .faq-link:hover {
+    color: white;
+    background-color: rgb(0, 136, 255);
+    cursor: pointer;
+}
+#section-2 #question-wrap {
     position: absolute;
-    bottom: 0;
+    bottom: -50px;
+    width: 100%;
+    z-index: 5;
 }
 #section-2 #got-question {
     position: absolute;
@@ -163,6 +180,38 @@ article p {
 #benefit-3 {
     border-right: 2px solid lightgrey;
 }
+.benefit-wrap {
+    position: absolute;
+    height: 90%;
+    width: 75%;
+}
+.benefit-desc, .benefit-title {
+    margin: 25px;
+}
+.benefit-desc {
+    font-size: 75%;
+    opacity: 0.8;
+}
+#b-w-1 {
+    top: 0;
+    left: 0;
+}
+#b-w-2 {
+    top: 0;
+    right: 0;
+}
+#b-w-3 {
+    bottom: 0;
+    left: 0;
+}
+#b-w-4 {
+   bottom: 0;
+   right: 0; 
+}
+#section-2 img {
+    opacity: 0.15;
+}
+
 
 #section-3 {
     background-image: url('images/laptoplady.jpg');
