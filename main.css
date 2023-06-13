@@ -26,7 +26,6 @@ body .logo {
     position: absolute;
     height: 40px;
     width: 150px;
-    border: 2px dashed skyblue;
     right: 30px;
 }
 span#interact-links p {
@@ -119,7 +118,7 @@ article p {
 }
 #section-2 fieldset {
     position: absolute;
-    top: 5%;
+    bottom: 0;
 }
 #section-2 #got-question {
     position: absolute;
@@ -150,6 +149,7 @@ article p {
     align-items: center;
     justify-content: center;
     position: relative;
+    bottom: 15%;
     width: 45%;
     height: 50%;
 }
@@ -204,9 +204,72 @@ article p {
     position: relative;
     height: 80%;
     width: 20%;
+    transition: background-color 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product:hover {
+    cursor: pointer;
 }
 #product-1.color {
-    background-color: red;
+    background-color: rgba(255, 142, 49, 0.1);
+}
+#product-3.color {
+    background-color: rgba(255, 255, 52, 0.1);
+}
+#product-2.color {
+    background-color: rgba(52, 160, 255, 0.1);
+}
+#product-4.color {
+    background-color: rgb(147, 0, 196, 0.1);
+}
+#product-5.color {
+    background-color: rgb(3, 170, 0, 0.1);
+}
+.product fieldset {
+    border: 10px inset purple;
+    margin: 25px;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    height: 60%;
+    position: relative;
+    justify-content: center;
+}
+.product ul {
+    position: relative;
+    width: 150%;
+    margin: 10px;
+    font-size: 70%;
+    font-weight: bold;
+}
+.product ul li {
+    list-style: none;
+    position: relative;
+    width: 140%;
+    right: 35%;
+    display: flex;
+    align-items: center;
+}
+.product ul li:before {
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url('/images/checkmark.svg');
+    background-repeat: no-repeat;
+    font-size: 20%;
+    margin: 10px;
+}
+.per-year {
+    color: black;
+    font-size: 60%;
+    -webkit-text-stroke: 1px white;
+}
+.big {
+    font-size: 120%;
+    margin-right: 5px;
 }
 #section-5 {
     background-color: rgb(56, 56, 56);
