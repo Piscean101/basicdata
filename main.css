@@ -46,7 +46,7 @@ header {
     width: 100%;
     height: 50px;
     top: 0;
-    z-index: 5;
+    z-index: 10;
 }
 
 /* Home Page : Sections */
@@ -66,11 +66,11 @@ header {
     height: 500px;
     z-index: -1;
     font-weight: bold;
-    box-shadow: 0px 150px 200px 150px white inset;
+    box-shadow: 75px 150px 500px 150px white inset;
 }
 #section-1 article {
     position: absolute;
-    left: 10%;
+    left: 5%;
     bottom: 10%;
     background-color: white;
     width: 500px;
@@ -104,14 +104,19 @@ article p {
 #section-1 #home-desc {
     width: 75%;
     height: 20%;
-    left: 10%;
-    color: rgb(94, 94, 94);
+    position: relative;
+    right: 7%;
+    bottom: 25px;
+    color: rgb(56, 56, 56);
     line-height: 0.9;
+    font-size: 120%;
 }
 #section-1 #home-title {
-    left: 5%;
+    position: absolute;
+    left: auto;
+    right: auto;
     font-size: 150%;
-    top: 25%;
+    top: 17%;
 }
 #section-2 {
     height: 1000px;
@@ -236,6 +241,9 @@ article p {
 #section-4 {
     height: 800px;
 }
+.product h1 {
+    z-index: -1;
+}
 #section-4 h1 {
     position: absolute;
     top: 0;
@@ -330,27 +338,88 @@ article p {
     display: flex;
     justify-content: center;
     width: 100%;
-    top: 0;
+    top: 20%;
+}
+#contacts-wrap ul {
+    position: relative;
+    top: 80px;
+}
+#contacts-wrap li {
+    list-style-type: none;
+    padding: 15px;
+}
+#contacts-wrap li:hover {
+    background-color: lightgray;
+    color: black;
+    cursor: pointer;
+}
+#section-5 #about-links {
+    position: absolute;
+    right: 10%;
+    bottom: 10px;
 }
 #section-5 #links-wrap {
-    position: relative;
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 15%;
-    width: 75%;
-    padding: 25px;
-
-}
-#section-5 fieldset {
+    top: 65%;
+    width: 180%;
+    border-top: 2px solid white;
+    overflow: hidden;
+    height: 150px;
+} 
+#section-5 #popular-links {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    position: absolute;
+    top: -50px;
     margin: 10px;
     width: 50%;
+    border: none;
+    border-radius: 5px;
+    max-height: 100px;
+}
+#section-5 #popular-links li {
+    list-style-type: none;
+    position: absolute;
+    height: 150px;
+    float: left;
+    position: relative;
+    padding: 40px;
+    padding-top: 80px;
+    border: 2px solid rgb(56, 56, 56);
+    text-align: center;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+#section-5 #popular-links li:hover {
+    background-color: lightgray;
+    cursor: pointer;
 }
 #section-5 h1#big-logo {
-    border-bottom: 1px solid white;
+    position: relative;
+    left: 5%;
     width: 90%;
     padding: 25px;
+}
+#section-5 h2#popular-links-title {
+    background-color: rgb(56, 56, 56);
+    position: absolute;
+    left: 0;
+    z-index: 5;
+    padding: 40px;
+    top: 50%;
+}
+#section-5 li:active /* #section-5 #popular-links li:active */ {
+    color: rgb(0, 136, 255);
+}
+#section-5 #popular-links li:active {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
 }
