@@ -1,0 +1,131 @@
+/* General */
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    inset: 0;
+    height: 90vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+} 
+*::-webkit-scrollbar {
+    background-color: rgba(123, 123, 123, 0.2);
+    border-radius: 25px;
+}
+*::-webkit-scrollbar-thumb {
+    background: rgb(0, 136, 255);
+    border-radius: 25px;
+}
+
+/* Header */ 
+.faq-page-title {
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    font-size: 300%;
+}
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgb(176, 218, 255), rgb(0, 136, 255));
+    color: white;
+}
+.contact-us {
+    position: absolute;
+    top: 90%;
+    font-size: 250%;
+    background-color: navy;
+    padding: 15px 40px;
+    border-radius: 30px;
+    word-spacing: 6px;
+}
+.contact-us b:hover {
+    cursor: pointer;
+    color: gold;
+    -webkit-text-stroke: 1px white;
+}
+
+/* Questions */ 
+.faq-wrap {
+    position: relative;
+    left: auto;
+    right: auto;
+    top: 400px;
+    width: 80%;
+    height: 90vh;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+}
+.question {
+    position: relative;
+    height: 50%;
+    width: 75%;
+    border: 2px solid grey;
+    margin: 50px;
+    padding: 10px 50px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.the-question {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    padding: 15px;
+    background-image: linear-gradient(to bottom, rgb(176, 218, 255), rgb(0, 136, 255));
+}
+.the-question h2 {
+    position: relative;
+    left: 5%;
+}
+.the-answer {
+    position: relative;
+}
+
+
+
+/* Misc */ 
+a {
+    text-decoration: none;
+}
+a:link {
+    color: gold;
+}
+a:visited {
+    color: brown;
+}
+.buffer {
+    background-color: white;
+    height: 50px;
+    width: 100%;
+}
+footer {
+    position: fixed;
+    background-color: rgb(56, 56, 56);
+    width: 100%;
+    bottom: 0;
+    height: 50px;
+}
+footer .link-wrap {
+    position: absolute;
+    right: 5%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+footer button {
+    height: 35px;
+    margin: 10px;
+}
