@@ -523,11 +523,17 @@ header {
     justify-content: center;
 }
 .bubble:hover {
-    color: white;
+    content: 'testing';
     width: 100%;
 }
 .bubble h2 {
     font-family:'Courier New', Courier, monospace;
+    padding: 5px;
+    pointer-events: none;
+}
+.bubble p {
+    display: none;
+    position: absolute;
 }
 
 @keyframes bounce {
